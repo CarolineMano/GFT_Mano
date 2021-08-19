@@ -1,3 +1,5 @@
+using System;
+
 namespace Idiomas
 {
     public class Tcheco : Idioma
@@ -5,7 +7,11 @@ namespace Idiomas
         public Tcheco()
         {
             nomeDoIdioma = "Tcheco";
-            mensagem = "Ahoj Svete";
+        }
+
+        public override void saudacao()
+        {
+            Console.WriteLine($"{nomeDoIdioma} Ahoj Svete");
         }
     }
 }

@@ -1,3 +1,5 @@
+using System;
+
 namespace Idiomas
 {
     public class Portugues : Idioma
@@ -5,7 +7,11 @@ namespace Idiomas
         public Portugues()
         {
             nomeDoIdioma = "Português";
-            mensagem = "Olá Mundo";
+        }
+
+        public override void saudacao()
+        {
+            Console.WriteLine($"{nomeDoIdioma} Olá Mundo");
         }
     }
 }

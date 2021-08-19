@@ -1,3 +1,5 @@
+using System;
+
 namespace Idiomas
 {
     public class Hungaro : Idioma
@@ -5,7 +7,11 @@ namespace Idiomas
         public Hungaro()
         {
             nomeDoIdioma = "Húngaro";
-            mensagem = "Helló Világ";
+        }
+
+        public override void saudacao()
+        {
+            Console.WriteLine($"{nomeDoIdioma} Helló Világ");
         }
     }
 }
