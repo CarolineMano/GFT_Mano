@@ -17,13 +17,7 @@ namespace NotasMusicais
 
             for(int i = numeroInicial; i <= numeroFinal; i++)
             {
-                if (i > 6)
-                {
-                    Console.Write($"{notas[(i % 6) - 1]} ");
-                    continue;
-                }
-                
-                Console.Write($"{notas[i]} ");
+                Console.Write($"{notas[(i % 7)]} ");
             }
         }
     }
